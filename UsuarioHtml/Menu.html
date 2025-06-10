@@ -4,41 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu usuario</title>
+    <title>Menu de usuario</title>
+    <link rel="stylesheet" href="/Style/menu.css">
 </head>
 
 <body>
 
   <header>
-    <h2>Bienvinido a tu área de trabajo.</h2>
-    <p>Aquí podras manejar todas tus finanzas en un solo lugar.</p>
+     <div class="enlaces3">
+            <ul>
+              <p>¿Algun problema?</p>
+              <li><a href="contactanos.html">Contactanos</a></li>
+            </ul>    
+        </div>
+    <h2>Maneja tu dinero</h2>
+    <p>¿Que quieres hacer hoy?</p>
   </header>
 
   <main>
     <div>
       <div>
         <input type="button" value="Consultar Saldo" id="consultar-saldo">
+        <img src="/IMG/consultarsaldo.png" alt="" srcset="">
+        <p class="SALDO">
+          La plataforma te mostrará el monto disponible 
+          en tu cuenta, permitiéndote mantener un control actualizado de 
+          tus finanzas sin necesidad de acudir físicamente al cajero.
+        </p>
       </div>
       <div>
         <input type="button" value="Transferir" id="transferir">
+        <img src="/IMG/tranferir.png" alt="" srcset="">
+        <p class="TRANFERIR">
+           Ingresa los datos del destinatario y el monto, y confirma la 
+           operación. El dinero se enviará de forma rápida y segura.
+        </p>
       </div>
       <div>
         <input type="button" value="Consignar" id="consignar">
+        <img src="/IMG/consignar.jpg" alt="">
+        <p class="CONSIGNAR">
+          Elige el tipo de cuenta y digita el valor.
+           Confirma la transacción y el dinero se acreditará en 
+           la cuenta indicada.
+        </p>
       </div>
       <div>
         <input type="button" value="Retirar" id="retirar">
+        <img src="/IMG/retirar.png" alt="" srcset="">
+        <p class="RETIRAR">
+          Elige el monto y confirma. Luego, puedes acercarte al cajero 
+          físico con un código o clave para completar el retiro sin tarjeta.
+        </p>
       </div>
       <div>
         <input type="button" value="Ver Movimientos" id="ver-movimientos">
+        <img src="/IMG/movimientosDinero.jpg" alt="" srcset="">
+        <p class="MOVIMIENTOS">
+          Revisa los detalles de tus ingresos, retiros y transferencias recientes
+        </p>
       </div>
       <div>
         <input type="button" value="Cerrar Sesión" id="cerrar-sesion">
+        <p>Fue un placer tenerte por aqui. 
+          Hasta luego.  
+        </p>
       </div>
     </div>
     <hr>
   </main>
 
   <footer>
+      <div class="pieF">
+                <p class="f">Que utilices nuestra pagina ayuda a sembrar árboles 🌳</p>
+                <p>COPYRIGHT © 2024 ClickPago S.A.S.</p>
+        </div>
   </footer>
 
 <script src="../Js/Menu.js"></script>

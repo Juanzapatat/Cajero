@@ -17,7 +17,7 @@ document.getElementById("retirar").addEventListener("click", function (event) {
 });
 
 document.getElementById("ver-movimientos").addEventListener("click", function (event) {
-    window.location.href = "ver_movimientos.html";
+    window.location.href = "../SubVistasHtml/movimientos.html";
 });
 
 document.getElementById("cerrar-sesion").addEventListener("click", function (event) {

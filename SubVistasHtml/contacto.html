@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Sucedio algo?</title>
+  <link rel="stylesheet" href="/Style/contacto.css">
+</head>
+<body>
+  <header>
+    <h1>¿Sucedio algo?</h1>
+    <p>Tu opinión es importante para mejorar nuestro servicio.</p>
+  </header>
+
+  <main>
+    <form id="formQuejas">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tipo">Tipo de mensaje:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Seleccione una opción</option>
+        <option value="queja">Queja</option>
+        <option value="sugerencia">Sugerencia</option>
+      </select>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cajero Electrónico | Atención al Cliente</p>
+  </footer>
+
+  <script>
+    document.getElementById('formQuejas').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Gracias por tu mensaje. Será revisado por nuestro equipo.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

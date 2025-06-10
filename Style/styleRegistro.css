@@ -1,57 +1,87 @@
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #b6d6ca, #03381b); 
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bolder;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      
-    }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+}
 
-    .form-container {
-      background-color: #fffdfd;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 500px;
-     
-    }
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
 
-    h3 {
-      text-align: center;
-      color: black;
-     
-     
-    }
+header h1 h2 {
+    margin-top: 20px;
+    font-weight: normal;
+}
 
-    #guardar {
-      width: 50%;
-    }
+/* Main/Formulario */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
 
-    /* Imágenes decorativas */
-    .img-top-left,
-    .img-bottom-right {
-      position: absolute;
-      width: 120px;
-      height: auto;
-      opacity: 0.9;
-    }
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
 
-    .img-top-left {
-      top: 20px;
-      left: 20px;
-      height: auto;
-      width: auto;
-    }
+form div {
+    margin-bottom: 10px;
+    gap: 3px;
+}
 
-    .img-bottom-right {
-      bottom: 20px;
-      right: 20px;
-      height: auto;
-      width: auto;
-    }
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"]
+ {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 100% ;
+    padding: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45709c;
+    padding: 10px;
+}
+
+

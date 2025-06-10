@@ -1,0 +1,152 @@
+header {
+  position: relative;
+  background-color: #003366;
+  color: #fff;
+  padding: 30px 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  
+}
+
+.enlaces3 {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.enlaces3 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.enlaces3 li {
+  display: inline-block;
+}
+
+.enlaces3 a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.enlaces3 a:hover {
+  background-color: #005bb5;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
+
+header h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+header p {
+  font-size: 20px;
+  color: #dce6f2;
+}
+
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+main  div div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+input[type="button"] {
+  flex-shrink: 0;
+  background-color: #003d7a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  min-width: 140px;
+}
+input[type="button"]:hover {
+  background-color: #2c3e50;
+}
+
+main img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  border-radius: 70px;
+}
+
+p {
+  flex: 1;
+  font-size: 15px;
+  color: black;
+  line-height: 1.4;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.f{
+  color: white;
+}
+
+.pieF p + p {
+  margin-top: 6px;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  main > div > div {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  input[type="button"] {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  main img {
+    margin: 0 auto;
+    max-width: 120px;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+}

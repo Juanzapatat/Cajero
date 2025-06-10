@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consignar</title>
+    <link rel="stylesheet" href="/Style/consignar.css">
 </head>
 <body>
 
-    <nav id="menu-lateral-derecha">
-        <ul>
-            <li><a href="menu-principal.html">Menú Principal</a></li>
-            <li><a href="consultar-saldo.html">Consultar Saldo</a></li>
-            <li><a href="transferir.html">Transferir</a></li>
-            <li><a href="retirar.html">Retirar</a></li>
-            <li><a href="ver-movimientos.html">Ver Movimientos</a></li>
-            <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
-        </ul>
+ <header>
+    <a class="boton4" href="/UsuarioHtml/Menu.html">Volver al menú</a>
+    <a class= "boton5" href="cerrar-sesion.html">Cerrar Sesión</a>
+    </nav>
+    <h2>Bienvenido al área de consignaciones</h2>
+        <p class="textoCons">Áca podras consignar dinero a las diferentes cuentas <br> bancarias 
+    y a su vez podras consignarte dinero a ti también.</p>
 
-<h3>Bienvenido al área de consignaciones:</h3>
-<p>Áca podras consignar dinero a las diferentes cuentas bancarias y a su vez podras consignarte dinero a ti también.</p>
+ </header>
+    
 
 <section id="contenedor-formulario">
-
+    <h2>Hola!</h2>
+      <p>Cuando realices tus consignaciones asegurate de escribir de manera correcta
+        el usuario que recibe.
+      </p>
 <form action="">
 
 <label for="usuario-consignacion">Usuario</label>
-<input type="email" id="usuario-consignacion" required>
+<input type="email" id="usuario-consignacion" required placeholder="Usuario">
 <br>
 
 <label for="cantidad">Monto</label>
-<input type="number" id="cantidad" required >
+<input type="number" id="cantidad" required placeholder="¿Cuanto?" >
 <br>
 
 <button id="consignar">Consignar</button>
 <br>
-
-
 </form>
-
-
 </section>
-<img src="../IMG/imagenConsignar.jfif" alt="Consignar" id="imagen-superior-izquierda">
 
-
-
-
+<footer>
+    <p>Que utilices nuestra pagina ayuda a sembrar árboles 🌳</p>
+    <p>COPYRIGHT © 2024 ClickPago S.A.S.</p>
+</footer>
 
     <script src="../Js/Consignar.js"></script>
 </body>

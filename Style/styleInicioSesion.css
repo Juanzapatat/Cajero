@@ -1,49 +1,106 @@
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #b6d6ca, #03381b); 
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bolder;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    .form-container {
-      background-color: #fffdfd;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 500px;
-     
-    }
+body {
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
-    h3 {
-      text-align: center;
-      color: black;
-     
-     
-    }
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    #guardar {
-      width: 50%;
-    }
+.Saludo {
+  text-align: center;
+  gap: 30px;
+}
 
-    /* Imágenes decorativas */
-    .img-top-left,
-    .img-bottom-right {
-      position: absolute;
-      width: 120px;
-      height: auto;
-      opacity: 0.9;
-    }
-
- .img-center-right{
-position: absolute;
-right: 50px;
-height:30%;
+.bienvenida2 {
+  gap: 20px;
 
 }
+
+header img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+header h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+main {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+form div > div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+  margin: 10px;
+
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  gap: 15px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #003366;
+  box-shadow: 0 0 6px #2c3e50;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #003366;
+;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #45709c;
+}
+
+
+    

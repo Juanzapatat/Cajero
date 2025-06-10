@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <title>Transferir</title>
+  <link rel="stylesheet" href="/Style/transferencia.css">
 </head>
 <body>
   <header>
-    <h2>Transferencia</h2>
+    <a class="boton2" href="..//UsuarioHtml/Menu.html">Volver al menú</a>
+    <a class= "boton3" href="cerrar-sesion.html">Cerrar Sesión</a>
+    <h2>¡Bienvenido a nuestra plataforma de transferencias!</h2>
+    <p class="bienv">
+      Rápido, seguro y confiable. <br>
+      Realiza tus transferencias en pocos 
+      pasos, con la tranquilidad de saber que <br>  
+      tus datos están protegidos en todo momento.
+    </p>
   </header>
 
-  <main>
+  <main>  
     <div>
-      <label for="usuarioDestino">Correo de usuario que recibe: </label>
-      <input type="text" id="usuarioDestino" placeholder="Ingrese el usuario" />
+      <label for="usuarioDestino">DESTINATARIO </label>
+      <input type="text" id="usuarioDestino" placeholder="Quien recibe" />
     </div>
 
     <div>
-      <label for="montoTransferencia">Cantidad a transferir: </label>
-      <input type="number" id="montoTransferencia" placeholder="Ingrese la cantidad" />
+      <label for="montoTransferencia">CANTIDAD A TRANSFERIR: </label>
+      <input type="number" id="montoTransferencia" placeholder= "¿Cuanto?" />
     </div>
-
+    
+    <button id="realizarTransferencia">Transferir</button>
     <div id="mensajeError"></div>
     <div id="mensajeExito"></div>
 
-    <button id="realizarTransferencia">Transferir</button>
   </main>
-
+  
   <footer>
-    <a href="..//UsuarioHtml/Menu.html">Volver al menú</a>
+      <div class="piee">
+                <p class="f">Que utilices nuestra pagina ayuda a sembrar árboles 🌳</p>
+                <p>COPYRIGHT © 2024 ClickPago S.A.S.</p>
+        </div>
   </footer>
-
   <script src="../JS/Transferencia.js"></script>
 </body>
 </html>
+
+

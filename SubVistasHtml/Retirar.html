@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/retirar.css">
     <title>Retirar</title>
 </head>
-<body>
 
-    <nav id="menu-lateral-derecha">
+<header> 
+         <nav class="menu">
         <ul>
-            <li><a href="menu-principal.html">Menú Principal</a></li>
-            <li><a href="consultar-saldo.html">Consultar Saldo</a></li>
-            <li><a href="transferir.html">Transferir</a></li>
-            <li><a href="consignar.html">Consignar</a></li>
-            <li><a href="ver-movimientos.html">Ver Movimientos</a></li>
+            <li><a href="../UsuarioHtml/Menu.html">Menú Principal</a></li>
             <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
         </ul>
+          </nav>
+    <h1>Bienvenido a Retiros:</h1>
+        <p>Áca podras retirar dinero de tu cuenta actual; <br>
+            recuerda no excederte del tope.</p>
 
-<h3>Bienvenido al área de retiros:</h3>
-<p>Áca podras retirar dinero de tu cuenta actual;recuerda no excederte del tope.</p>
-
+</header>
+   
+<body>
 <section id="contenedor-formulario">
-
-<form action="">
+    <form action="">
 
 <label for="usuario-retiro">Usuario</label>
 <input type="email" id="usuario-retiro" required>
@@ -47,15 +47,6 @@
 
 
 </form>
-
-
-</section>
-<img src="../IMG/imagenRetirar.avif" alt="Retiro" id="imagen-superior-izquierda">
-
-
-
-
-
-    <script src="../Js/Retirar.js"></script>
+<script src="../Js/Retirar.js"></script>
 </body>
 </html>

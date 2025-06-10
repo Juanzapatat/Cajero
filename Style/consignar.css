@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    font-family: sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+/******* header **/
+header {
+  background-color: #004080;
+  color: white;
+  padding: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+
+/* Botones en header */
+.boton4, .boton5 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.boton5 {
+    color: white;
+}
+
+.boton4:hover, .boton5:hover {
+    opacity: 0.85;
+}
+
+/* Formulario */
+#contenedor-formulario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    translate: 0px 100px;
+}
+
+#contenedor-formulario h2 {
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+#contenedor-formulario p {
+    margin-bottom: 20px;
+    gap: 40px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Botón de consignar */
+#consignar {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#consignar:hover {
+    background-color: #45709c;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366 ;
+    margin-top: auto;
+    color: white;
+    translate: 0px 150px;
+
+}
+
+   
+
+/* Responsive */
+@media (max-width: 600px) {
+    .boton4, .boton5 {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+}

@@ -1,0 +1,59 @@
+/* Fuente general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Párrafos */
+p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Icono árbol */
+footer p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Detalle visual: Animación sutil para el árbol 🌳 */
+@keyframes crecer {
+    0% { opacity: 0; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.2); }
+}
